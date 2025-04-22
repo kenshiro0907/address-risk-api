@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: address-risk-api
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./data:/data
+    environment:
+      - TYPEORM_CONNECTION=sqlite
+      - TYPEORM_DATABASE=/data/db.sqlite
+      - NODE_ENV=production
+    restart: unless-stopped
