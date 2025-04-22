@@ -8,7 +8,7 @@ import { Address } from './address/address.entity';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'sqlite3',
+      type: 'sqlite',
       database: '/data/db.sqlite',
       entities: [Address],
       synchronize: true, // À désactiver en production
