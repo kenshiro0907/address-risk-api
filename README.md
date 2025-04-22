@@ -64,19 +64,11 @@ Récupère les risques associés à l’adresse en base via l’API Géorisques.
 
 #### 🔁 Réponses possibles
 
-| Code                                          | Exemple |
-| --------------------------------------------- | ------- |
-| 200 OK                                        | ```json |
-| { ...JSON complet de l’API Géorisques... }``` |
-| 404 Not Found                                 | ```json |
-
-{
-"error": "Adresse non trouvée."
-}`|
-| 500 Internal Server Error |`json
-{
-"error": "Erreur serveur : échec de la récupération des données de Géorisques."
-}``` |
+| Code                      | Exemple                                                                           |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| 200 OK                    | { ...JSON complet de l’API Géorisques... }                                        |
+| 404 Not Found             | {"error": "Adresse non trouvée."}                                                 |
+| 500 Internal Server Error | {"error": "Erreur serveur : échec de la récupération des données de Géorisques."} |
 
 ---
 
@@ -95,30 +87,3 @@ npm run test
 ```
 
 ---
-
-## 🗂 Arborescence
-
-```
-src/
-├── address/
-│   ├── address.controller.ts
-│   ├── address.service.ts
-│   ├── address.entity.ts
-│   ├── dto/
-│   │   └── create-address.dto.ts
-│   └── __tests__/
-│       └── address.service.spec.ts
-├── app.module.ts
-```
-
----
-
-## 📬 Dépôt Git clonable
-
-Merci de rendre ce dépôt public et fonctionnel sans authentification.
-
-Une fois terminé, envoie le lien à : **contact@klaire.cc**
-
----
-
-**Bonne chance & bon code ⚡**
