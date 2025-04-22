@@ -49,32 +49,12 @@ Content-Type: application/json
 
 #### 🔁 Réponses possibles
 
-| Code   | Exemple |
-| ------ | ------- |
-| 200 OK | ```json |
-
-{
-"id": 1,
-"label": "8 bd du Port, 56170 Sarzeau",
-"housenumber": "8",
-"street": "bd du Port",
-"postcode": "56170",
-"citycode": "56242",
-"latitude": 47.58234,
-"longitude": -2.73745
-}`|
-| 400 Bad Request |`json
-{
-"error": "Le champ 'q' est requis et doit être une chaîne non vide."
-}`|
-| 404 Not Found |`json
-{
-"error": "Adresse non trouvée. Aucun résultat ne correspond à votre recherche."
-}`|
-| 500 Internal Server Error |`json
-{
-"error": "Erreur serveur : impossible de contacter l'API externe."
-}``` |
+| Code                      | Exemple                                                                                                                                                                        |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 200 OK                    | {"id": 1,"label": "8 bd du Port, 56170 Sarzeau","housenumber": "8","street": "bd du Port","postcode": "56170","citycode": "56242","latitude": 47.58234,"longitude": -2.73745 } |
+| 400 Bad Request           | {"error": "Le champ 'q' est requis et doit être une chaîne non vide."}                                                                                                         |
+| 404 Not Found             | {"error": "Adresse non trouvée. Aucun résultat ne correspond à votre recherche."}`                                                                                             |
+| 500 Internal Server Error | {"error": "Erreur serveur : impossible de contacter l'API externe"}                                                                                                            |
 
 ---
 
