@@ -64,11 +64,11 @@ Récupère les risques associés à l’adresse en base via l’API Géorisques.
 
 #### 🔁 Réponses possibles
 
-| Code                      | Exemple                                                                           |
-| ------------------------- | --------------------------------------------------------------------------------- |
-| 200 OK                    | { ...JSON complet de l’API Géorisques... }                                        |
-| 404 Not Found             | {"error": "Adresse non trouvée."}                                                 |
-| 500 Internal Server Error | {"error": "Erreur serveur : échec de la récupération des données de Géorisques."} |
+| Code                      | Exemple                                                                                              |
+| ------------------------- | ---------------------------------------------------------------------------------------------------- |
+| 200 OK                    | `json<br>{ ...JSON complet de l’API Géorisques... }`                                                 |
+| 404 Not Found             | `json<br>{<br> "error": "Adresse non trouvée."<br>}`                                                 |
+| 500 Internal Server Error | `json<br>{<br> "error": "Erreur serveur : échec de la récupération des données de Géorisques."<br>}` |
 
 ---
 

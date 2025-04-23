@@ -86,7 +86,7 @@ export class AddressService {
         );
       }
 
-      return JSON.parse(response.data);
+      return response.data;
     } catch (error) {
       if (error instanceof HttpException) {
         throw error;
