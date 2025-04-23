@@ -74,10 +74,12 @@ Récupère les risques associés à l’adresse en base via l’API Géorisques.
 
 ## 🧪 Tests unitaires
 
-Un test simple est disponible dans :
+Des tests simples sont disponible dans :
 
 ```
 tests/address.service.spec.ts
+tests/address.controller.spec.ts
+tests/app.controller.spec.ts
 ```
 
 Commandes :
