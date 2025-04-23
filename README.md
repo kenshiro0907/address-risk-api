@@ -15,7 +15,7 @@ docker compose up
 ```
 
 L'API sera accessible sur :  
-👉 http://localhost:8000/api/addresses
+👉 http://localhost:8000/
 
 ---
 
