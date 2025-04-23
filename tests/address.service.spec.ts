@@ -8,6 +8,7 @@ describe('AddressService', () => {
 
   const mockRepository = {
     findOne: jest.fn(),
+    findOneBy: jest.fn(),
     create: jest.fn(),
     save: jest.fn(),
   };
@@ -18,7 +19,7 @@ describe('AddressService', () => {
         AddressService,
         {
           provide: getRepositoryToken(Address),
-          useValue: mockRepository,
+          useValue: mockRepository, // Fournit le mock ici
         },
       ],
     }).compile();
