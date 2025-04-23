@@ -34,7 +34,7 @@ export class AddressService {
         );
       }
 
-      const data = JSON.parse(response.data);
+      const data = response.data;
       if (!data.features || data.features.length === 0) {
         throw new HttpException(
           'Adresse non trouvée. Aucun résultat ne correspond à votre recherche.',
